@@ -23,12 +23,17 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe preprocessing to someone new to CSS?
+*It is a syntax for css that allows you to automate your styling and make it match the HTML a little more clearly*
 2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+*I like that you can nest css within itself to match the html, and the part that I still dont quite understand is escaping with the "~"*
 3. How would you explain the concept of a variable to someone new to programming?
+*a variable is a place holder for a value of somesort, sort of like the word food, I am going to eat some food, could actually mean I am going to eat some tacos, and the word food could be replaced with anything that you could eat. this is the same with variables, except instead of categories, it is data types.*
 4. What is the purpose of using functions in code?
+*functions allow you to keep your code DRY, so that you dont have to write the same code over and over*
 5. What is JSON data?
+*JSON data is a standardized way of keeping data in javascript objects*
 
-You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
+You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
 ## Instructions
 
@@ -36,10 +41,10 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 Follow these steps to set up your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your Team Lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add your Team Lead as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
 
 ### Task 2a:  Minimum Viable Product - Responsive Design
 
@@ -54,7 +59,7 @@ Navigate to `index.js` and complete the MVP challenges. Note that you need to sc
 
 ### Task 3: Stretch Problems
 
-> Include stretch goals in this section. These are additional things the student can do go beyond basic proficiency, and push their scores on the challenge up to a 3. Be clear that these are *not* required. Completing all of the tasks in the required section must be sufficient to  demonstrate proficiency of all sprint objectives, and earn a score of '2. 
+> Include stretch goals in this section. These are additional things the student can do go beyond basic proficiency, and push their scores on the challenge up to a 3. Be clear that these are *not* required. Completing all of the tasks in the required section must be sufficient to  demonstrate proficiency of all sprint objectives, and earn a score of '2.
 
 > Example stretch goals below:
 
