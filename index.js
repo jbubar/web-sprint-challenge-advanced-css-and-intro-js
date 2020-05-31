@@ -1,4 +1,4 @@
-const artists = [
+let artists = [
     {
       "id": 0,
       "name": "Amedeo Modigliani",
@@ -291,15 +291,20 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 At the end, this function should console.log() the new array with information added"*/
 
 function addArtist(artists, newArtist){
-    artists.push(newArtist);
+    artists = artists.concat(newArtist);
     console.log(artists[artists.length - 1]);
   }
 const newArtist = [{"id": 21,
   "name": "Josh Bubar",
   "years": "1993 - current day",
   "genre": "Web Design",
-  "nationality": "USA"
+  "nationality": "USA",
   "bio": "A teacher who learned how to code."}]
+
+  heading("Task 6");
+  addArtist(artists, newArtist);
+
+
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument:
 
@@ -309,12 +314,18 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
-
-  /* Code here */
-
+function lotsOfArt(artists){
+  let superArtists = [];
+  for (let i = 0; i < artists.length; i++){
+    if(artists[i].paintings > 100){
+      superArtists.push(artists[i].name);
+    }
+  }
+  return(superArtists);
 }
 
+heading("Task 7");
+console.log(lotsOfArt(artists));
 
 
 // 🎨🎨 STRETCH 🎨🎨//
@@ -340,20 +351,23 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */){
+function getHTML(artists){
 
-    /* Code here */
 
   }
 
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
-function randomize(/* Code here */){
-
-    /* Code here */
-
+function randomize(arr){
+  let randomArr = [];
+  for (let i = 0; i < arr.length; i++){
+    randomArr.splice(Math.floor(Math.random()*randomArr.length), 0, arr[i]);
   }
-
+  return randomArr;
+}
+heading("Stretch 2");
+const testarry = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(randomize(testarry));
 
  /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
